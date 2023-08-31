@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Secret site</title>
+</head>
+<body>
+    <h2>Siecret site</h2>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password">
+    <button onclick="checkPassword()">Submit</button>
+
+    <script>
+        function checkPassword() {
+            var password = document.getElementById("password").value;
+            if (password === "12859704856387218989217672901055932002055362219237") {
+                window.location.href = "2.html";
+            } else {
+                alert("Incorrect password");
+            }
+        }
+    </script>
+</body>
+</html>
